@@ -1,0 +1,20 @@
+<form class="example-form" [formGroup]="form" (submit)="onClick()">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Company</mat-label>
+    <input matInput value="Clario" formControlName="company" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>First name</mat-label>
+    <input matInput formControlName="firstName" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Last name</mat-label>
+    <input matInput formControlName="lastName" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">
+    Send data to C#
+  </button>
+</form>
